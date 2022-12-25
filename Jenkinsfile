@@ -5,20 +5,20 @@ pipeline {
     }
 
     stages {
-        stage('Dev') {
+        stage('feature') {
             when {
-                expression {prams.env=="Dev"}
+                branch 'feature'
             }
             steps {
-                echo'deploy in Dev environment'
+                echo'deploy in feature'
             }
         }
-        stage('test') {
+        stage('devlop') {
             when {
-                expression {prams.env=="test"}
+                branch 'devlop'
             }
             steps {
-                echo'deploy in test environment'
+                echo'deploy in devlop'
             }
         }
     }
