@@ -10,7 +10,7 @@ pipeline {
                 expression {prams.env=="Dev"}
             }
             steps {
-                echo'depioy in Dev environment'
+                echo'deploy in Dev environment'
             }
         }
     }
